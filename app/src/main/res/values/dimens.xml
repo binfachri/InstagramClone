@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="size_pp">50dp</dimen>
+    <dimen name="img_post">400dp</dimen>
+    <dimen name="icon_size">40dp</dimen>
+    <dimen name="margin_btnmore">5dp</dimen>
+    <dimen name="objek_jarak">8dp</dimen>
+    <dimen name="caption_size">16sp</dimen>
+    <dimen name="pp_profile">100dp</dimen>
+    <dimen name="info_post_size">18sp</dimen>
+    <dimen name="appname_size">50sp</dimen>
+    <dimen name="parent_register">40dp</dimen>
+    <dimen name="jarak_parent_login">32dp</dimen>
+    <dimen name="height_register">50dp</dimen>
+    <dimen name="pp_register">150dp</dimen>
+    <dimen name="border_register">1dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

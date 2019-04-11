@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentrootregsiter"
+    android:background="@drawable/anim_bg_list"
+    tools:context=".RegisterActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pp_profile"
+        android:layout_width="@dimen/pp_register"
+        android:layout_height="@dimen/pp_register"
+        android:src="@drawable/ic_person_white"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/parent1"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="@dimen/border_register"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <LinearLayout
+        android:id="@+id/parent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/jarak_parent_login"
+        android:paddingRight="@dimen/jarak_parent_login">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/objek_jarak"
+            android:textColorHint="@color/bg_txt_login"
+            app:boxBackgroundColor="@color/bg_box_login"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtemailreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/objek_jarak"
+            android:textColorHint="@color/bg_txt_login"
+            app:boxBackgroundColor="@color/bg_box_login"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtusernamereg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/objek_jarak"
+            android:textColorHint="@color/bg_txt_login"
+            app:boxBackgroundColor="@color/bg_box_login"
+            app:boxBackgroundMode="outline"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/bg_txt_login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtpassreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnregister"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/objek_jarak"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_txt_login"
+            android:textSize="15sp"
+            app:backgroundTint="@color/transparent"
+            app:cornerRadius="2dp"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtloginreg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_register"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_box_login"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/login_help"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
